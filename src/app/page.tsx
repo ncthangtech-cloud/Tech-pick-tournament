@@ -646,9 +646,9 @@ export default function Home() {
             
             {/* Brand Title Group */}
             <div className="brand-title-group brand-title-text-align">
-              <h1 className="brand-title" style={{ fontSize: '2.4rem' }}>Vietnam Airlines</h1>
-              <div className="brand-subtitle" style={{ fontSize: '1rem', letterSpacing: '0.2em', marginTop: '0.2rem' }}>Technical Department Pickleball Club</div>
-              <div className="brand-slogan" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 600, letterSpacing: '0.25em', textTransform: 'uppercase', marginTop: '0.6rem', opacity: 0.9 }}>KHỎE ĐỂ VƯƠN MÌNH</div>
+              <h1 className="brand-title">Vietnam Airlines</h1>
+              <div className="brand-subtitle">Technical Department Pickleball Club</div>
+              <div className="brand-slogan">KHỎE ĐỂ VƯƠN MÌNH</div>
             </div>
           </div>
         </header>
