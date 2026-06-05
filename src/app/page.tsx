@@ -721,8 +721,9 @@ export default function Home() {
                     <tbody>
                       {rankingsWithRanks.map((p, idx) => {
                         const rankClass = p.rank <= 2 ? 'rank-top-2' : p.rank === 3 ? 'rank-best-3rd' : 'rank-other';
+                        const isRank1 = p.rank === 1;
                         return (
-                          <tr key={p.id}>
+                          <tr key={p.id} className={isRank1 ? 'rank-1-row' : undefined}>
                             <td>
                               <span className={`rank-badge ${rankClass}`}>
                                 {p.rank}

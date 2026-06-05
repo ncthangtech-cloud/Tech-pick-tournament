@@ -49,16 +49,11 @@ export const Carousel: React.FC<CarouselProps> = ({ photos }) => {
             key={index}
             className={`carousel-slide ${index === activeIndex ? 'active' : ''}`}
             style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url(${img.url})`,
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${img.url})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
-          >
-            <div className="carousel-caption">
-              <span className="carousel-badge">Recent Event Photo</span>
-              <p className="carousel-text">{img.caption}</p>
-            </div>
-          </div>
+          />
         ))}
       </div>
       
