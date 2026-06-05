@@ -483,11 +483,14 @@ export default function Home() {
       location: eLoc,
       date: eDate,
       type: eType,
-      results: eType === 'past' ? eResults : undefined,
-      photos: eventPhotos,
-      awardedPoints: eType === 'past' ? newAwardedPoints : undefined,
-      awardedDetails: eType === 'past' ? newAwardedDetails : undefined
+      photos: eventPhotos
     };
+
+    if (eType === 'past') {
+      eventToSave.results = eResults;
+      eventToSave.awardedPoints = newAwardedPoints;
+      eventToSave.awardedDetails = newAwardedDetails;
+    }
 
     await dbService.saveEvent(eventToSave);
 
