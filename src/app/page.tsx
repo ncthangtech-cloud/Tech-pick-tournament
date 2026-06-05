@@ -86,6 +86,30 @@ const INITIAL_TIPS: Tip[] = [
     title: 'Warm-up & Injury Prevention',
     content: 'Do 5-10 minutes of dynamic stretching targeting your shoulders, knees, and Achilles. Pickleball requires fast lateral movements which can stress cold joints.',
     category: 'Fitness'
+  },
+  {
+    id: 't5',
+    title: 'Serve & Return Depth',
+    content: 'Keep serves and returns deep near the baseline. A deep return pins your opponents back, preventing an aggressive third shot and granting your team time to reach the kitchen line.',
+    category: 'Tactics'
+  },
+  {
+    id: 't6',
+    title: 'The Transition Split-Step',
+    content: 'Never run blindly through the transition zone while the ball is live. Split-step (freeze) into a balanced stance just before your opponent strikes the ball to reset hard returns.',
+    category: 'Technique'
+  },
+  {
+    id: 't7',
+    title: 'Control the Seam',
+    content: 'Hitting down the middle line ("the seam") reduces opponent angles, eliminates boundary line errors, and creates communication confusion between partner defenders.',
+    category: 'Strategy'
+  },
+  {
+    id: 't8',
+    title: 'Target the Hip Pocket',
+    content: 'When attacking, aim directly at your opponent\'s paddle-side hip or shoulder. This "jams" their arms, preventing them from extending their paddle and forcing weak pop-ups.',
+    category: 'Tactics'
   }
 ];
 
