@@ -628,7 +628,24 @@ export default function Home() {
         <header className="brand-header">
           <div className="brand-title-group" style={{ alignItems: 'center', textAlign: 'center', width: '100%' }}>
             <h1 className="brand-title" style={{ fontSize: '2.4rem' }}>Vietnam Airlines</h1>
-            <div className="brand-subtitle" style={{ fontSize: '1rem', letterSpacing: '0.2em' }}>Technical Department Pickleball Club</div>
+            <div className="brand-subtitle" style={{ fontSize: '1rem', letterSpacing: '0.2em', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem', marginTop: '0.2rem' }}>
+              <svg viewBox="0 0 100 100" fill="currentColor" style={{ height: '1.4rem', width: '1.4rem', color: 'var(--vn-gold)', transform: 'rotate(-15deg)', flexShrink: 0 }}>
+                {/* Paddle Head */}
+                <rect x="25" y="15" width="50" height="50" rx="16" />
+                {/* Handle */}
+                <rect x="45" y="62" width="10" height="25" rx="3" />
+                {/* Small handle grip tape detail */}
+                <rect x="43" y="82" width="14" height="5" rx="1" fill="#0b5768" />
+                {/* Small pickleball ball outline next to paddle */}
+                <circle cx="80" cy="55" r="8" />
+                <circle cx="80" cy="55" r="1.5" fill="#0b5768" />
+                <circle cx="75" cy="50" r="1.5" fill="#0b5768" />
+                <circle cx="85" cy="60" r="1.5" fill="#0b5768" />
+                <circle cx="75" cy="60" r="1.5" fill="#0b5768" />
+                <circle cx="85" cy="50" r="1.5" fill="#0b5768" />
+              </svg>
+              <span>Technical Department Pickleball Club</span>
+            </div>
             <div className="brand-slogan" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 600, letterSpacing: '0.25em', textTransform: 'uppercase', marginTop: '0.6rem', opacity: 0.9 }}>KHỎE ĐỂ VƯƠN MÌNH</div>
           </div>
         </header>
