@@ -1471,24 +1471,4 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.75rem;
 }
 
-/* Golden rectangle style for Rank 1 standings rows */
-.rank-1-row td {
-  border-top: 2px solid var(--vn-gold) !important;
-  border-bottom: 2px solid var(--vn-gold) !important;
-  background-color: rgba(197, 160, 89, 0.08) !important;
-  transition: all 0.3s ease;
-}
-
-.rank-1-row td:first-child {
-  border-left: 2px solid var(--vn-gold) !important;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-
-.rank-1-row td:last-child {
-  border-right: 2px solid var(--vn-gold) !important;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-
 

@@ -712,18 +712,17 @@ export default function Home() {
                   <table className="standings-table">
                     <thead>
                       <tr>
-                        <th style={{ width: '60px' }}>Rank</th>
-                        <th>Player</th>
-                        <th>Department</th>
-                        <th style={{ textAlign: 'right' }}>Points</th>
+                        <th style={{ width: '60px', color: 'var(--vn-gold)' }}>Rank</th>
+                        <th style={{ color: 'var(--vn-gold)' }}>Player</th>
+                        <th style={{ color: 'var(--vn-gold)' }}>Department</th>
+                        <th style={{ textAlign: 'right', color: 'var(--vn-gold)' }}>Points</th>
                       </tr>
                     </thead>
                     <tbody>
                       {rankingsWithRanks.map((p, idx) => {
-                        const rankClass = p.rank <= 2 ? 'rank-top-2' : p.rank === 3 ? 'rank-best-3rd' : 'rank-other';
-                        const isRank1 = p.rank === 1;
+                        const rankClass = p.rank <= 3 ? 'rank-best-3rd' : 'rank-other';
                         return (
-                          <tr key={p.id} className={isRank1 ? 'rank-1-row' : undefined}>
+                          <tr key={p.id}>
                             <td>
                               <span className={`rank-badge ${rankClass}`}>
                                 {p.rank}
